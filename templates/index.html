@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Huberman RAG</title>
+  </head>
+  <body>
+    <h1>Huberman Q&A</h1>
+    <form hx-post="/ask" hx-target="#answer" hx-swap="innerHTML">
+      <input type="text" name="question" placeholder="Ask a question" />
+      <button type="submit">Ask</button>
+    </form>
+    <div id="answer"></div>
+  </body>
+</html>

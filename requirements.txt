@@ -1,0 +1,4 @@
+faiss-cpu
+numpy
+flask
+llama-cpp-python

@@ -68,3 +68,23 @@ Follow these steps to set up and run the backend:
     ```bash
     python3 app.py
     ```
+
+## Huberman Podcast RAG
+
+This project contains a simple Retrieval-Augmented Generation pipeline for answering questions about Huberman Lab podcast transcripts. It runs completely on-device once models are downloaded.
+
+### Quick Start
+
+```bash
+make setup       # install python deps
+make index       # build FAISS index from transcripts
+python main.py --question "How do I return to sleep?" --model <path/to/model>
+```
+
+To start the web interface:
+
+```bash
+make run
+```
+
+Then open <http://localhost:11434> in your browser.
